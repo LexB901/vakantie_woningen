@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main .objects {
+    width: 55%;
+    margin: 0 auto;
+}
+.main .objects .item {
+    padding: 10px;
+    margin: 30px;
+    border: 1px rgba(0, 0, 0, 0.25) solid;
+
+    display: flex;
+}
+.main .objects .item .item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main .objects .item .item-afbeelding {
+    padding-right: 10px;
+}
+.main .objects .item .item-afbeelding img {
+    max-width: 300px;
+}
+.main .objects .item .item-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.main .objects .item .item-adres {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.main .objects .item .item-beschrijving {
+    font-size: 14px;
+}
+.main .objects .item .item-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.main .objects .item .item-prijs {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.main .objects .item .item-link {
+    font-size: 14px;
+    color: #007BFF;
+}
+
+.main .paging {
+    display: flex;
+}
+
+@media only screen and (max-width:1100px) {
+    .main .objects {
+        width: 80%;
+    }
+    .main .objects .item {
+        flex-direction: column;
+    }
+    .main .objects .item .item-afbeelding img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .main .objects .item .item-info {
+        padding-top: 10px;
+    }
+}
